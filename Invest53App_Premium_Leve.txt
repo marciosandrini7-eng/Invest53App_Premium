@@ -1,0 +1,6 @@
+Invest53App_Premium_Leve/
+ ┣ main.py
+ ┣ Checklist_Invest53App_Premium_Resumo_Leve.py
+ ┣ requirements.txt
+ ┣ Prompts_Invest53App.txt
+ ┗ icon_dourado.png

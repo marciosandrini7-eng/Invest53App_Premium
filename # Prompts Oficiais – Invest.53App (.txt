@@ -1,0 +1,6 @@
+# Prompts Oficiais – Invest.53App (Edição Premium)
+- Desenvolvimento
+- Design
+- Segurança
+- Deploy
+- Licenciamento
