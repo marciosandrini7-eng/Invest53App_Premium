@@ -1,4 +1,4 @@
-from flask import Flask, send_file
+from flask import Flask, render_template, send_file
 import subprocess
 import os
 
@@ -6,15 +6,15 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return '''
-    <h2>💼 Invest53App Premium - Geração de PDF</h2>
-    <p><a href="/gerar">📄 Gerar Checklist Leve</a></p>
-    '''
+    return render_template('index.html')
 
 @app.route('/gerar')
 def gerar_pdf():
     try:
-        subprocess.run(["python", "Checklist_Invest53App_Premium_Resumo_Leve.py"], check=True)
+        subprocess.run(
+            ["python", "Checklists/Checklist_Invest53App_Premium_Resumo_Leve.py"],
+            check=True
+        )
         pdf_path = "Invest53App_Checklist.pdf"
         if os.path.exists(pdf_path):
             return send_file(pdf_path, as_attachment=True)
