@@ -1,0 +1,40 @@
+/* 🎨 Invest53App Premium - Visual Grafite Metálico */
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: radial-gradient(circle at top left, #1c1c1c, #2e2e2e, #3a3a3a);
+  color: #f1f1f1;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2em;
+  color: #d4af37; /* dourado metálico */
+  margin-top: 40px;
+}
+
+button, a {
+  display: inline-block;
+  background: linear-gradient(145deg, #4a4a4a, #2a2a2a);
+  color: #f1f1f1;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 3px 3px 10px #000;
+  transition: all 0.2s ease;
+  font-weight: bold;
+}
+
+button:hover, a:hover {
+  background: linear-gradient(145deg, #5a5a5a, #3a3a3a);
+  transform: scale(1.05);
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.8em;
+  color: #aaa;
+}
